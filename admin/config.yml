@@ -1,10 +1,13 @@
 backend:
   name: github
-  repo: oski13371/oski13371.github.io
+  repo: oski13371/Palala   # 👈 tu Twoje repozytorium
   branch: main
 
+site_url: "https://oski13371.github.io/Palala"  # 👈 ścieżka do strony
+base_url: "/Palala"
+
 media_folder: "images/uploads"
-public_folder: "/images/uploads"
+public_folder: "/Palala/images/uploads"
 
 collections:
   - name: "posts"
