@@ -2,15 +2,15 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "images/uploads"       # Gdzie zapisywane są obrazki
-public_folder: "/images/uploads"
+media_folder: "static/uploads"
+public_folder: "/uploads"
 
 collections:
   - name: "posts"
     label: "Posty"
-    folder: "posts"                  # Folder z Twoimi postami
-    create: true                     # Pozwala tworzyć nowe wpisy
-    slug: "{{slug}}"                 # Automatyczne generowanie nazw plików
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Tytuł", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
