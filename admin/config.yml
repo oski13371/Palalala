@@ -1,9 +1,8 @@
 backend:
-  name: github
-  repo: oski13371/Palala   # 👈 tu Twoje repozytorium
+  name: git-gateway
   branch: main
 
-site_url: "https://oski13371.github.io/Palala"  # 👈 ścieżka do strony
+site_url: "https://oski13371.github.io/Palala"
 base_url: "/Palala"
 
 media_folder: "images/uploads"
