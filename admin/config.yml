@@ -2,18 +2,15 @@ backend:
   name: git-gateway
   branch: main
 
-site_url: "https://oski13371.github.io/Palala"
-base_url: "/Palala"
-
-media_folder: "images/uploads"
-public_folder: "/Palala/images/uploads"
+media_folder: "images/uploads"       # Gdzie zapisywane są obrazki
+public_folder: "/images/uploads"
 
 collections:
   - name: "posts"
     label: "Posty"
-    folder: "posts"
-    create: true
-    slug: "{{slug}}"
+    folder: "posts"                  # Folder z Twoimi postami
+    create: true                     # Pozwala tworzyć nowe wpisy
+    slug: "{{slug}}"                 # Automatyczne generowanie nazw plików
     fields:
       - { label: "Tytuł", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
