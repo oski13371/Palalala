@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel administracyjny</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>🛠️ Panel administracyjny</h1></header>
+
+  <div id="loginSection" class="admin-box">
+    <h2>Zaloguj się</h2>
+    <input type="text" id="username" placeholder="Login" />
+    <input type="password" id="password" placeholder="Hasło" />
+    <button onclick="login()">Zaloguj</button>
+  </div>
+
+  <div id="adminPanel" class="admin-box hidden">
+    <h2>Dodaj nowy post</h2>
+    <input type="text" id="postTitle" placeholder="Tytuł posta" />
+    <textarea id="postContent" placeholder="Treść posta"></textarea>
+    <input type="file" id="postImage" accept="image/*" />
+    <button onclick="addPost()">Dodaj post</button>
+
+    <h3>📜 Istniejące posty</h3>
+    <div id="postList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
